@@ -10,6 +10,7 @@ public class DummyBotTest  {
         String expected = "Привет, умник.";
         String in = "Привет, Бот.";
         String out = DummyBot.answer(in);
+        Assert.assertEquals(expected, out);
     }
 
     @Test
@@ -17,6 +18,7 @@ public class DummyBotTest  {
         String expected = "До скорой встречи.";
         String in = "Пока.";
         String out = DummyBot.answer(in);
+        Assert.assertEquals(expected, out);
     }
 
     @Test
@@ -24,6 +26,7 @@ public class DummyBotTest  {
         String expected = "Это ставит меня в тупик. Задайте другой вопрос.";
         String in = "Привет";
         String out = DummyBot.answer(in);
+        Assert.assertEquals(expected, out);
     }
 
 }
