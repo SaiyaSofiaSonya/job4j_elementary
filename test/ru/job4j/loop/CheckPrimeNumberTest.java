@@ -9,6 +9,7 @@ public class CheckPrimeNumberTest {
         int number = 5;
         boolean result = CheckPrimeNumber.check(number);
         Assert.assertTrue(result);
+
     }
 
     @Test
