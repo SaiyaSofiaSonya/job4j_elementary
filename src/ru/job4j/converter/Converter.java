@@ -14,17 +14,23 @@ public class Converter {
         float dollar = Converter.rubleToDollar(140);
         System.out.println("140 rubles are " + euro + " euro.");
         System.out.println("140 rubles are " + dollar + " dollars.");
+        testForEuro();
+        testForDollar();
+    }
 
-        float inEuro = 140;
-        float expectedEuro = 2;
-        float outEuro = Converter.rubleToEuro(inEuro);
-        boolean passedEuro  = expectedEuro == outEuro;
-        System.out.println("140 rubles are 2. Test result : " + passedEuro);
+    public static void testForEuro() {
+        float in = 140;
+        float expected = 2;
+        float out = Converter.rubleToEuro(in);
+        boolean passed = expected == out;
+        System.out.println("140 rubles are 2. Test result : " + passed);
+    }
 
-        float inDollar = 120;
-        float expectedDollar = 2;
-        float outDollar = Converter.rubleToDollar(inDollar);
-        boolean passedDollar = expectedDollar == outDollar;
-        System.out.println("120 rubles are 2. Test result : " + passedDollar);
+    public static void testForDollar() {
+        float in = 120;
+        float expected = 2;
+        float out = Converter.rubleToDollar(in);
+        boolean passed = expected == out;
+        System.out.println("120 rubles are 2. Test result : " + passed);
     }
 }
