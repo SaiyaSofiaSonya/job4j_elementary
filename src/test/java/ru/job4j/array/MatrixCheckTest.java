@@ -53,7 +53,6 @@ public class MatrixCheckTest {
         Assert.assertFalse(result);
     }
 
-
     @Test
     public void whenDiagonalFullX() {
         char[][] input = {
@@ -89,7 +88,6 @@ public class MatrixCheckTest {
         char[] expected = {'X', 'Y', 'Z'};
         Assert.assertArrayEquals(expected, result);
     }
-
 
     @Test
     public void whenDataMonoByTrueThenTrue() {
